@@ -55,7 +55,7 @@ env:
   AZCLIVERSION: 2.30.0 #2.29.2 #2.26.0 #latest
   RG: "Automation-Actions-AksDeployCI"
   ParamFilePath: ".github/workflows_dep/AksDeploy-ByoVnet.parameters.json"
-  RESNAME: "Byo"
+  RESNAME: "Byo${{ github.run_number }}"
   DEPNAME: "Dep${{ github.run_number }}"
   KVACCESS: "IAM"
 
