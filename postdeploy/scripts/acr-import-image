@@ -1,0 +1,5 @@
+#!/bin/bash
+set -e
+
+echo "Importing Image: $imageName into ACR: $acrName"
+az acr import -n $acrName --source $imageName --force
